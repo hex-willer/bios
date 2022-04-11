@@ -1,6 +1,8 @@
 import socket
 
-addr1 = socket.gethostbyname('google.com')
-addr2 = socket.gethostbyname('yahoo.com')
+val = input("Enter the URL : ")
+addr1 = socket.gethostbyname(val)
 
-print(addr1, addr2)
+print("The dns lookup for url ",val,"is ",addr1) 
+
+
